@@ -1,0 +1,18 @@
+[LOG]: [FFmpegLib]: DEST URL: /Users/joshuayang/RockVR/Video/2017-10-03-17-43-23-C44AL.mp4
+[LOG]: [FFmpegLib]: Build command: "/Users/joshuayang/Desktop/VR DeCal/HW2/Assets/StreamingAssets/RockVR/FFmpeg/OSX/ffmpeg" -f rawvideo -pix_fmt rgb24 -r 30 -s 1280x720 -i - -y -preset ultrafast -pix_fmt yuv420p -vcodec libx264 -crf 18 -vf vflip -framerate 30 -tune zerolatency "/Users/joshuayang/RockVR/Video/2017-10-03-17-43-23-C44AL.mp4"
+[LOG]: [FFmpegLib]: DEST URL: /Users/joshuayang/RockVR/Video/2017-10-03-17-43-23-JRPZD.wav
+[LOG]: [FFmpegLib]: Build command: "/Users/joshuayang/Desktop/VR DeCal/HW2/Assets/StreamingAssets/RockVR/FFmpeg/OSX/ffmpeg" -f f32le -ar 44100 -ac 2 -i - -y -preset ultrafast -tune zerolatency "/Users/joshuayang/RockVR/Video/2017-10-03-17-43-23-JRPZD.wav"
+[ERROR]: [FFmpegLib]: Failed to close ffmpeg process
+[ERROR]: [FFmpegLib]: Failed to close ffmpeg process
+[LOG]: [FFmpegLib]: DEST URL: /Users/joshuayang/RockVR/Video/2017-10-03-17-46-03-S5MPU.mp4
+[LOG]: [FFmpegLib]: Build command: "/Users/joshuayang/Desktop/VR DeCal/HW2/Assets/StreamingAssets/RockVR/FFmpeg/OSX/ffmpeg" -f rawvideo -pix_fmt rgb24 -r 30 -s 1280x720 -i - -y -preset ultrafast -pix_fmt yuv420p -vcodec libx264 -crf 18 -vf vflip -framerate 30 -tune zerolatency "/Users/joshuayang/RockVR/Video/2017-10-03-17-46-03-S5MPU.mp4"
+[LOG]: [FFmpegLib]: DEST URL: /Users/joshuayang/RockVR/Video/2017-10-03-17-46-03-BN3O0.wav
+[LOG]: [FFmpegLib]: Build command: "/Users/joshuayang/Desktop/VR DeCal/HW2/Assets/StreamingAssets/RockVR/FFmpeg/OSX/ffmpeg" -f f32le -ar 44100 -ac 2 -i - -y -preset ultrafast -tune zerolatency "/Users/joshuayang/RockVR/Video/2017-10-03-17-46-03-BN3O0.wav"
+[ERROR]: [FFmpegLib]: Failed to close ffmpeg process
+[ERROR]: [FFmpegLib]: Failed to close ffmpeg process
+[LOG]: [FFmpegLib]: DEST URL: /Users/joshuayang/RockVR/Video/2017-10-03-17-48-46-GUBA2.mp4
+[LOG]: [FFmpegLib]: Build command: "/Users/joshuayang/Desktop/VR DeCal/HW2/Assets/StreamingAssets/RockVR/FFmpeg/OSX/ffmpeg" -f rawvideo -pix_fmt rgb24 -r 30 -s 640x480 -i - -y -preset ultrafast -pix_fmt yuv420p -vcodec libx264 -crf 18 -vf vflip -framerate 30 -tune zerolatency "/Users/joshuayang/RockVR/Video/2017-10-03-17-48-46-GUBA2.mp4"
+[LOG]: [FFmpegLib]: DEST URL: /Users/joshuayang/RockVR/Video/2017-10-03-17-48-46-G9QDZ.wav
+[LOG]: [FFmpegLib]: Build command: "/Users/joshuayang/Desktop/VR DeCal/HW2/Assets/StreamingAssets/RockVR/FFmpeg/OSX/ffmpeg" -f f32le -ar 44100 -ac 2 -i - -y -preset ultrafast -tune zerolatency "/Users/joshuayang/RockVR/Video/2017-10-03-17-48-46-G9QDZ.wav"
+[ERROR]: [FFmpegLib]: Failed to close ffmpeg process
+[ERROR]: [FFmpegLib]: Failed to close ffmpeg process
