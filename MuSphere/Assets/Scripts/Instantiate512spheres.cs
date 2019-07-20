@@ -26,7 +26,7 @@ public class Instantiate512spheres : MonoBehaviour {
 	//set max size of spheres
 	public float maxScale;
 
-	// Scales the height of each cube by this much.
+	// Scales the height of each sphere by this much.
 	public float scale;
 	public float shift = 1f;
 
@@ -111,7 +111,9 @@ public class Instantiate512spheres : MonoBehaviour {
 				}
 
 				//Set band to scale spheres to their respective band sizes
-				band = SpectrumAnalyzer.audioBandBuffers [bandNum];
+				band = SpectrumAnalyzer.audioBandBuffers[bandNum];
+
+				scale = Mathf.Min(maxScale, SpectrumAnalyzer.getAvgMaxFrequency() / 1.5f);
 				//Set color
 				rend.sharedMaterial = materials[bandNum];
 

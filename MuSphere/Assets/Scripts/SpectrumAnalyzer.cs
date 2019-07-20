@@ -9,7 +9,7 @@ public class SpectrumAnalyzer : MonoBehaviour {
 	public static float[] freqBand = new float[8];
 	public static float[] bufferBand = new float[8];
 
-	float[] freqBandHighest = new float[8];
+	static float[] freqBandHighest = new float[8];
 
 	public static float[] audioBands = new float[8];
 	public static float[] audioBandBuffers = new float[8];
@@ -22,6 +22,7 @@ public class SpectrumAnalyzer : MonoBehaviour {
 			}
 			audioBands [k] = freqBand [k] / freqBandHighest[k];
 			audioBandBuffers [k] = bufferBand [k] / freqBandHighest[k];
+
 		}
 	}
 
@@ -31,7 +32,7 @@ public class SpectrumAnalyzer : MonoBehaviour {
 				bufferBand [k] = freqBand [k];
 				bufferDecrease [k] = 0.005f;
 			}
-			if (freqBand[k] < bufferBand[k]){
+			if (freqBand[k] < bufferBand[k] && (bufferBand[k] - bufferDecrease [k]) > 0){
 				bufferBand [k] -= bufferDecrease [k];
 				bufferDecrease [k] *= 1.4f;
 			}
@@ -70,6 +71,28 @@ public class SpectrumAnalyzer : MonoBehaviour {
 			average /= count;
 			freqBand[i] = (i+1) * 100 * average;
 		}
+	}
+
+	public static float getAvgMaxFrequency() {
+		float avg = 0;
+
+		for (int k = 0; k < 8; k++) {
+			avg += freqBandHighest[k];
+		}
+
+		avg /= 8f;
+		return avg;
+	}
+
+	public static float getAvgFrequency() {
+		float avg = 0;
+
+		for (int k = 0; k < 8; k++) {
+			avg += freqBand[k];
+		}
+
+		avg /= 8f;
+		return avg;
 	}
 
 	// Update is called once per frame
